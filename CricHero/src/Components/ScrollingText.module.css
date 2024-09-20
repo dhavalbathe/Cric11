@@ -1,34 +1,51 @@
 .scrolling-Header {
     height: 4rem;
     width: 100%;
-    background-color: #1C1C1C;
-    color: #FFFFFF;
+    /* background-color: #1C1C1C; */
+    background-image: url('../assets//cricket pitch.jpeg'); /* Path if the image is in the public folder */
+    background-size: cover;       /* Ensures the image covers the entire navbar */
+    background-position: center;
+    color: #000;
     overflow: hidden;
     white-space: nowrap;
     place-content: center;
-    padding: 0 10px;
+    padding:0 10px;
 }
 
 .scrolling-Text {
     font-size: 2.5rem;
     font-weight: 700;
-    animation: scroll-left 10s linear infinite;
-    -webkit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+}
+.text-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cricket-ball {
+    width: 100px;          /* Set width as per your needs */
+    height: auto;          /* Maintain the aspect ratio */
+    object-fit: contain; 
 }
 
-@keyframes scroll-left {
-    0% {
-      transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
+.text {
+    margin: 0 1rem;
 }
-    100% {
-      transform: translateX(-45%);
-      -webkit-transform: translateX(-45%);
-      -moz-transform: translateX(-45%);
-      -ms-transform: translateX(-45%);
-      -o-transform: translateX(-45%);
+@keyframes scroll-left {
+    from {
+      transform: translateX(70%);
+      -webkit-transform: translateX(70%);
+      -moz-transform: translateX(70%);
+      -ms-transform: translateX(70%);
+      -o-transform: translateX(70%);
+}
+    to {
+      transform: translateX(-70%);
+      -webkit-transform: translateX(-70%);
+      -moz-transform: translateX(-70%);
+      -ms-transform: translateX(-70%);
+      -o-transform: translateX(-70%);
 }
   }
