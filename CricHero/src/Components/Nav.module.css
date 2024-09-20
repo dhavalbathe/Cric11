@@ -1,7 +1,8 @@
-/* Styles for the Navbar */
+/* Nav.module.css */
 .navbar {
-  background-color: #00aaff; /* Sky blue background */
+  background-color: #780000; /* Dark red background */
   padding: 16px 24px;
+  transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
 .navContainer {
@@ -16,151 +17,6 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-
-.logoText {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: #FDF0D5;
-  /*Lightcreamforlogotext*/text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  margin-left: 10px;
-  font-size: 2rem;
-  transition: transform 0.3s ease;
-  /*Addtransitionforzoomeffect*/-webkit-transition: transform 0.3s ease;
-  -moz-transition: transform 0.3s ease;
-  -ms-transition: transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
-  -webkit-transition: transform 0.3s ease;
-}
-
-.logoText:hover {
-  transform: scale(1.1);
-}
-
-/* Styles for Navigation Links */
-.navLinks {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navLink {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  transition: all 0.3s ease;
-  font-weight: 700;
-  color: #003049;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-right: 16px;
-  background-image: linear-gradient(90deg, #FDF0D5, #003049);
-  background-size: 100% 200%;
-  background-position: 0% 0%;
-  background-clip: text;
-}
-
-.navLink:after {
-  content: '🏏';
-  font-size: 1.5rem;
-  position: absolute;
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.navLink:hover:after {
-  opacity: 1;
-  right: -30px;
-}
-
-.navLink:hover {  
-  background-position: 0% 100%;
-  transform: scale(1.05);
-  color: #FDF0D5;
-  text-shadow: 2px 2px 5px rgba(0, 112, 193, 0.5);
-}
-
-.navLink:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #669BBC;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.navLink:hover:before {
-  visibility: visible;
-  width: 100%;
-}
-
-/* Register Button */
-.registerButton {
-  padding: 12px 24px;
-  background-color: #669BBC;
-  color: #FDF0D5;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.registerButton:hover {
-  background-color: #003049;
-}
-
-/* Mobile menu button (hidden on desktop) */
-.mobileMenu {
-  display: none;
-}
-
-.menuButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menuIcon {
-  width: 24px;
-  height: 24px;
-  color: #FDF0D5;
-}
-
-@media (max-width: 768px) {
-  .navLinks {
-    display: none;
-  }
-  .mobileMenu {
-    display: block;
-  }
-}
-/* Styles for the Navbar */
-.navbar {
-  background-color: #780000; /* Restored dark red background */
-  padding: 16px 24px;
-}
-
-.navContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logoContainer {
-  display: flex;
-  align-items: center;
-  text-decoration: none; /* Remove underline for logo */
 }
 
 .logoText {
@@ -170,7 +26,7 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-left: 10px;
   font-size: 2rem;
-  transition: transform 0.3s ease; /* Add transition for zoom effect */
+  transition: transform 0.3s ease; /* Zoom effect */
 }
 
 .logoText:hover {
@@ -195,15 +51,14 @@
   text-decoration: none;
   border-radius: 5px;
   margin-right: 16px;
-  background-image: linear-gradient(90deg, #C1121F, #669BBC); /* Original gradient background */
+  background-image: linear-gradient(90deg, #C1121F, #669BBC); /* Gradient background */
   background-size: 100% 200%;
   background-position: 0% 0%;
   -webkit-background-clip: text;
 }
 
-/* Add cricket bat icon effect */
 .navLink:after {
-  content: '🏏';
+  content: '🏏'; /* Cricket bat icon */
   font-size: 1.5rem;
   position: absolute;
   right: -20px;
@@ -222,7 +77,7 @@
   background-position: 0% 100%;
   transform: scale(1.05);
   color: #C1121F; /* Dark red for hover effect */
-  text-shadow: 2px 2px 5px rgba(193, 18, 31, 0.5); /* Darker shadow */
+  text-shadow: 2px 2px 5px rgba(193, 18, 31, 0.5);
 }
 
 /* Underline effect on hover */
@@ -233,7 +88,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #6B7280; /* Grey underline on hover */
+  background-color: #669BBC; /* Underline color */
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -241,6 +96,23 @@
 .navLink:hover:before {
   visibility: visible;
   width: 100%;
+}
+
+/* Register Button */
+.registerButton {
+  padding: 12px 24px;
+  background-color: #C1121F; /* Dark red for Register button */
+  color: #FDF0D5;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: #8d6565; /* Darker red for hover */
 }
 
 /* Mobile menu button (hidden on desktop) */
@@ -260,31 +132,12 @@
   color: #FDF0D5; /* Cream for the menu icon */
 }
 
-/* Adjusted Register Button Shape */
-.registerButton {
-  padding: 10px 20px;
-  background-color: #C1121F; /* Keep the original dark red for Register button */
-  color: #FDF0D5;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 20px; /* Changed shape to rounded corners */
-  text-align: center;
-  transition: background-color 0.3s ease;
-  position: relative; /* To adjust position upwards */
-  top: -5px; /* Move the button slightly upwards */
-}
-
-.registerButton:hover {
-  background-color: #8d6565; /* Darker red for hover */
-}
-
 /* Responsive design for mobile */
 @media (max-width: 768px) {
   .navLinks {
-    display: none;
+    display: none; /* Hide links in mobile */
   }
   .mobileMenu {
-    display: block;
+    display: block; /* Show mobile menu button */
   }
 }
