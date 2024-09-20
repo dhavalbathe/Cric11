@@ -3,7 +3,8 @@
     width: 100%;
     /* background-color: #1C1C1C; */
     background-image: url('../assets//cricket pitch.jpeg'); /* Path if the image is in the public folder */
-    background-size: cover;       /* Ensures the image covers the entire navbar */
+    background-size: cover;   
+    background-repeat: no-repeat;
     background-position: center;
     color: #000;
     overflow: hidden;
