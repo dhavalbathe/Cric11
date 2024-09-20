@@ -15,6 +15,9 @@ export const Nav = () => {
             <li><a href="#" className={styles.navLink}>Tournaments</a></li>
             <li><a href="#" className={styles.navLink}>About Us</a></li>
             <li><a href="#" className={styles.navLink}>Contact</a></li>
+            <li>
+              <a href="#" className={styles.registerButton}>Register</a>
+            </li>
           </ul>
           <div className={styles.mobileMenu}>
             <button className={styles.menuButton}>
