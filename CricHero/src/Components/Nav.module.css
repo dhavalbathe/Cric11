@@ -1,3 +1,127 @@
-.headingStyle {
-    color: orangered;
+/* Styles for the Navbar */
+.navbar {
+  background-color: #780000; /* Dark red background */
+  padding: 16px 24px;
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline for logo */
+}
+
+.logoText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #FDF0D5; /* Light cream for logo text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+  font-size: 2rem;
+  transition: transform 0.3s ease; /* Add transition for zoom effect */
+}
+
+.logoText:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Styles for Navigation Links */
+.navLinks {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  color: #FDF0D5; /* Light cream for nav link text */
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 16px;
+  background-image: linear-gradient(90deg, #C1121F, #669BBC); /* Gradient background */
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  -webkit-background-clip: text;
+}
+
+/* Add cricket bat icon effect */
+.navLink:after {
+  content: '🏏';
+  font-size: 1.5rem;
+  position: absolute;
+  right: -20px; /* Decreased distance */
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for the links */
+.navLink:hover:after {
+  opacity: 1;
+  right: -30px; /* Adjusted to decrease gap */
+}
+
+.navLink:hover {
+  background-position: 0% 100%;
+  transform: scale(1.05);
+  color: #C1121F; /* Dark red for hover effect */
+  text-shadow: 2px 2px 5px rgba(193, 18, 31, 0.5); /* Darker shadow */
+}
+
+/* Underline effect on hover */
+.navLink:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6B7280; /* Grey underline on hover */
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.navLink:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* Mobile menu button (hidden on desktop) */
+.mobileMenu {
+  display: none;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 24px;
+  color: #FDF0D5; /* Cream for the menu icon */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+  }
 }
