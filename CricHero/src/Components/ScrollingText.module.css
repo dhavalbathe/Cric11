@@ -15,15 +15,17 @@
 .scrolling-Text {
     font-size: 2.5rem;
     font-weight: 700;
-    animation: scroll-left 20s linear infinite;
-    -webkit-animation: scroll-left 20s linear infinite;
+    animation: scroll-left 10s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
 }
-.text-container {
+.items-container {
     height: 100%;
+    width:auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .cricket-ball {
     width: 100px;          /* Set width as per your needs */
     height: auto;          /* Maintain the aspect ratio */
