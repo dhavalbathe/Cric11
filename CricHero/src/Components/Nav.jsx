@@ -15,10 +15,8 @@ export const Nav = () => {
             <li><a href="#" className={styles.navLink}>Tournaments</a></li>
             <li><a href="#" className={styles.navLink}>About Us</a></li>
             <li><a href="#" className={styles.navLink}>Contact</a></li>
-            <li>
-              <a href="#" className={styles.registerButton}>Register</a>
-            </li>
           </ul>
+          <a href="#" className={styles.registerButton}>Register</a>
           <div className={styles.mobileMenu}>
             <button className={styles.menuButton}>
               <svg xmlns="http://www.w3.org/2000/svg" className={styles.menuIcon} fill="none" viewBox="0 0 24 24" stroke="currentColor">
