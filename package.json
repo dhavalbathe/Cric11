@@ -1,0 +1,24 @@
+{
+  "name": "cric11",
+  "version": "1.0.0",
+  "description": "This is my website for webwizz Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhavalbathe/Cric11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhavalbathe/Cric11/issues"
+  },
+  "homepage": "https://github.com/dhavalbathe/Cric11#readme",
+  "devDependencies": {
+    "vite": "^5.4.6"
+  }
+}
