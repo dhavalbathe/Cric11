@@ -1,12 +1,13 @@
 .scrolling-Header {
-    height: 4rem;
+    height: 2rem;
     width: 100%;
     /* background-color: #1C1C1C; */
-    background-image: url('../assets//cricket pitch.jpeg'); /* Path if the image is in the public folder */
-    background-size: cover;   
+    /* background-image: url('../assets//cricket pitch.jpeg'); /* Path if the image is in the public folder */
+    /* background-size: cover;   
     background-repeat: no-repeat;
-    background-position: center;
-    color: #000;
+    background-position: center; */ 
+    background-color: #d82f3b;;
+    color: #fff;
     overflow: hidden;
     white-space: nowrap;
     place-content: center;
@@ -14,7 +15,7 @@
 }
 
 .scrolling-Text {
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: 700;
     animation: scroll-left 10s linear infinite;
     -webkit-animation: scroll-left 10s linear infinite;
@@ -28,13 +29,14 @@
 }
 
 .cricket-ball {
-    width: 100px;          /* Set width as per your needs */
+    width: 3rem;          /* Set width as per your needs */
     height: auto;          /* Maintain the aspect ratio */
     object-fit: contain; 
 }
 
 .text {
     margin: 0 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 @keyframes scroll-left {
     from {
