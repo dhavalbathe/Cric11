@@ -36,6 +36,7 @@
 
 .text {
     margin: 0 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 @keyframes scroll-left {
     from {

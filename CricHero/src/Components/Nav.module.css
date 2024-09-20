@@ -27,11 +27,11 @@
   margin-left: 10px;
   font-size: 2rem;
   transition: transform 0.3s ease;
-   /* Add transition for zoom effect */
-  -webkit-transition: transform 0.3s ease;
+  /*Addtransitionforzoomeffect*/-webkit-transition: transform 0.3s ease;
   -moz-transition: transform 0.3s ease;
   -ms-transition: transform 0.3s ease;
   -o-transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
 }
 
 .logoText:hover {
