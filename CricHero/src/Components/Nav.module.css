@@ -101,14 +101,19 @@
 /* Register Button */
 .registerButton {
   padding: 12px 24px;
-  background-color: #C1121F; /* Dark red for Register button */
-  color: #FDF0D5;
+  background-color: #C1121F;
+  /*DarkredforRegisterbutton*/color: #FDF0D5;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  border-radius: 20px; /* Rounded corners */
-  text-align: center;
+  border-radius: 20px;
+  /*Roundedcorners*/text-align: center;
   transition: background-color 0.3s ease;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-left:0.7rem;
 }
 
 .registerButton:hover {
