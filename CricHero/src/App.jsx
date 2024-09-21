@@ -8,10 +8,11 @@ function App() {
 
   return (
     <>
-        <div className="hero-section">
-            <ScrollingText />
-            <Nav />
-        </div>
+          <ScrollingText />
+          <Nav />
+          <div className="hero-section">
+            
+          </div>
     </>
   )
 }

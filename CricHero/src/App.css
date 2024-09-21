@@ -3,3 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.hero-section {
+  width: 100vw;
+  height: 40rem;;
+  background-image: url("./assets/backgroundImage.webp");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  
+}
