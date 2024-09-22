@@ -23,11 +23,7 @@ function App() {
 
               </div>
           <div className="right-section">
-              <div className="text">
-                  </div>
-              <div className="matches"></div>
-              </div>
-              <div className="right-section">
+
               <h1>Digital Score Card</h1>
               <div className="match-type"></div>
               <div className="search-match"></div>
