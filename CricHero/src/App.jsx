@@ -17,7 +17,7 @@ function App() {
           <div className="hero-section">
               <div className="left-section">
                 <div className="text">
-                    
+          
                 </div>
                 <div className="matches">
                     <Match />
@@ -43,7 +43,7 @@ function App() {
                 <div className="pak-over">20 over</div>
               </div>
               </div>
-        </div>
+          </div>
 
          <SocialMediaSection/>
     </>
