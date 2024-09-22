@@ -13,6 +13,8 @@
   background-repeat: no-repeat;
   padding: 2rem 6rem;
   display: flex;
+  gap: 5px;
+  
 
 }
 
@@ -25,5 +27,4 @@
   width: 200px;
   height: 500px;
   background-color: rgba(90, 91, 37, 50%);
-  align-items: center;
 }
