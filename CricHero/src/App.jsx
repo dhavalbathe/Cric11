@@ -7,6 +7,7 @@ import './App.css';
 import SocialMediaSection from './Components/SocialMediaSection.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import MatchSchedule from './Components/MatchSchedule';
+import Footer from './Components/Footer.jsx';
 
 function App() {
 
@@ -80,6 +81,8 @@ function App() {
 
       <MatchSchedule />
       <SocialMediaSection />
+
+      <Footer />
     </>
   );
 }
