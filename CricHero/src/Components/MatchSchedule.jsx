@@ -4,7 +4,7 @@ import './MatchSchedule.css';
 const TournamentSchedule = () => {
   return (
     <section className="tournament-schedule">
-      <h2>Don't miss out on any action – browse through the upcoming tournaments!</h2>
+      <h2>Don't miss out on any action – browse through the upcoming tournaments from Cric11!</h2>
 
       {/* Tournament Cards */}
       <div className="tournament-cards">
