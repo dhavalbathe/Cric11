@@ -8,7 +8,6 @@ import './App.css';
 import SocialMediaSection from './Components/SocialMediaSection.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import MatchSchedule from './Components/MatchSchedule';
-import MatchSchedule from './Components/MatchSchedule';
 
 function App() {
 
@@ -17,13 +16,6 @@ function App() {
     return (
       <div className="left-top-container">
         <div className="text-container">
-          <h1 className='heading'>Welcome to Cric 11!</h1>
-          <p className='para1'>Ready to play? Register your team now and compete in exciting matches. Stay updated with schedules, track your team's progress, and climb the leaderboard!</p>
-          <p className='para2'>Register today and take your team to victory!</p>
-        </div>
-        <div className="cricket-image">
-          <img className="Cricketer-image" src={cricketer} alt="Cricketer" />
-        </div>
           <h1 className='heading'>Welcome to Cric 11!</h1>
           <p className='para1'>Ready to play? Register your team now and compete in exciting matches. Stay updated with schedules, track your team's progress, and climb the leaderboard!</p>
           <p className='para2'>Register today and take your team to victory!</p>
@@ -42,7 +34,6 @@ function App() {
       <Nav />
       <div className="hero-section">
         <div className="left-section">
-          <Text />
           <Text />
           <div className="matches">
             <Match />
@@ -76,7 +67,12 @@ function App() {
             </div>
           </span>
 
-          <div className="match-between">IND VS PAK</div>
+          <div className="match-between">
+            <p>IND</p>
+            <p>VS</p>
+           <p>PAK</p>
+          </div>
+
           <div className="ind-pak">
             <div className="ind">
               <p className="ind1">IND</p>
@@ -89,12 +85,10 @@ function App() {
               <p className="pak-over">20 over</p>
             </div>
           </div>
+          
 
         </div>
       </div>
-
-      <MatchSchedule />
-      <SocialMediaSection />
 
       <MatchSchedule />
       <SocialMediaSection />

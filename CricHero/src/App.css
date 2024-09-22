@@ -15,14 +15,11 @@
   display: flex;
   gap: 5rem;
   
-
-
 }
 
 .matches {
   padding-top: 1rem;
   display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 
@@ -72,10 +69,6 @@
 .search-button:hover {
   background-color: #45a049;
 }
-/* .matchtype{
-  font-size: 44px;
-
-} */
  span p {
   font-weight: 300;
   font-size: 22px;
