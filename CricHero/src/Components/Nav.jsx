@@ -1,12 +1,16 @@
 import React from 'react';
 import styles from './Nav.module.css';
+import logo from "../assets/website-logo.png";
+
 
 export const Nav = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
         <a href="#" className={styles.logoContainer}>
-          <div className={styles.logoText}>CRIC 11</div>
+          <div><img className={styles.logo} src={logo} /> </div>
+          <div className={styles.logoText}>CRIC 11
+          </div>
         </a>
         <ul className={styles.navLinks}>
           <li><a href="#" className={styles.navLink}>Home</a></li>

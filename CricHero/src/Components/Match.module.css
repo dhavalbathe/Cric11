@@ -1,7 +1,7 @@
 .match-container {
     width: 400px;
     height: 170px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: #7cb9e899;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -16,6 +16,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    box-shadow: 10px 10px 20px #7CB9E8;
 }
 .match-container:hover {
     transform: scale(1.08);

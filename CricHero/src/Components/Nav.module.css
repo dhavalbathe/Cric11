@@ -1,13 +1,13 @@
 /* Nav.module.css */
 .navbar {
-  background-color: #7695FF;
+  background-color: #007bff;
   /*Darkredbackground*/padding: 16px 24px;
   transition: background-color 0.3s ease;
-  /*Smoothbackgroundtransition*/-webkit-transition: background-color 0.3s ease;
+   /* Smooth background transition */
+  -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   -ms-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
-  -webkit-transition: background-color 0.3s ease;
 }
 
 .navContainer {
@@ -17,13 +17,25 @@
   justify-content: space-between;
   align-items: center;
 }
+/* logo */
 
 .logoContainer {
   display: flex;
   align-items: center;
   text-decoration: none;
+  transition: transform 0.3s ease;
+  /* Zoom effect */
+ -webkit-transition: transform 0.3s ease;
+ -moz-transition: transform 0.3s ease;
+ -ms-transition: transform 0.3s ease;
+ -o-transition: transform 0.3s ease;
 }
 
+.logo {
+  height: 4rem;
+  width: 4rem;
+
+}
 .logoText {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -31,15 +43,9 @@
   /*Lightcreamforlogotext*/text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-left: 10px;
   font-size: 2rem;
-  transition: transform 0.3s ease;
-   /* Zoom effect */
-  -webkit-transition: transform 0.3s ease;
-  -moz-transition: transform 0.3s ease;
-  -ms-transition: transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
 }
 
-.logoText:hover {
+.logoContainer:hover {
   transform: scale(1.1); /* Zoom effect on hover */
 }
 
@@ -47,7 +53,7 @@
 .navLinks {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin-left: 23rem;
   padding: 0;
 }
 
@@ -57,14 +63,19 @@
   padding: 10px 20px;
   transition: all 0.3s ease;
   font-weight: 700;
-  color: #FDF0D5; /* Light cream for nav link text */
+  color: #FDF0D5;
+  /*Lightcreamfornavlinktext*/
   text-decoration: none;
   border-radius: 5px;
   margin-right: 16px;
-  background-image: linear-gradient(90deg, #C1121F, #669BBC); /* Gradient background */
-  background-size: 100% 200%;
+  background-image: linear-gradient(90deg, #C1121F, #669BBC);
+  /*Gradientbackground*/background-size: 100% 200%;
   background-position: 0% 0%;
   background-clip: text;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 .navLink:after {
