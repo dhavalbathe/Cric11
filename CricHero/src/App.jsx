@@ -80,9 +80,9 @@ function App() {
               </div>
               </div>
           </div>
-
+          </span>
          <SocialMediaSection/>
-            </span>
+           
 
             <span>
               <p>Search Your match</p>
@@ -116,4 +116,4 @@ function App() {
 }
 
 export default App;
-export default App;
+
