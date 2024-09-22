@@ -2,11 +2,25 @@ import { useState } from 'react';
 import { ScrollingText } from "./Components/ScrollingText.jsx";
 import { Nav } from "./Components/Nav.jsx";
 import { Match } from "./Components/Match.jsx";
+import cricketer from "./assets/cricketer.png";
 import './App.css'
 
 function App() {
   
-
+  const Text = () => {
+    return (
+      <div className="left-top-container">
+        <div className="text-container">
+        <h1 className='heading'>Welcome to Cric 11!</h1>
+        <p className='para1'>Ready to play? Register your team now and compete in exciting matches. Stay updated with schedules, track your team's progress, and climb the leaderboard!</p>
+        <p className='para2'>Register today and take your team to victory!</p>
+      </div>
+      <div className="cricket-image">
+        <img className="Cricketer-image" src={cricketer} />
+      </div>
+      </div>
+    )
+  }
   return (
     <>
           <ScrollingText />
@@ -14,7 +28,7 @@ function App() {
           <div className="hero-section">
               <div className="left-section">
                 <div className="text">
-          
+                    <Text />
                 </div>
                 <div className="matches">
                     <Match />
@@ -45,4 +59,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
