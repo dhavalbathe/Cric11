@@ -13,3 +13,8 @@
   background-repeat: no-repeat;
   
 }
+
+.matches {
+  display: flex;
+  gap: 2rem;
+}

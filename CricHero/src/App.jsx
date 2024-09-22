@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ScrollingText } from "./Components/ScrollingText.jsx";
 import { Nav } from "./Components/Nav.jsx";
+import { Match } from "./Components/Match.jsx";
 import './App.css'
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
 
                 </div>
                 <div className="matches">
-                  
+                    <Match />
+                    <Match />
                 </div>
 
               </div>
