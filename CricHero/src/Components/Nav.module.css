@@ -1,8 +1,13 @@
 /* Nav.module.css */
 .navbar {
-  background-color: #780000; /* Dark red background */
-  padding: 16px 24px;
-  transition: background-color 0.3s ease; /* Smooth background transition */
+  background-color: #780000;
+  /*Darkredbackground*/padding: 16px 24px;
+  transition: background-color 0.3s ease;
+   /* Smooth background transition */
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
 }
 
 .navContainer {
@@ -23,11 +28,16 @@
 .logoText {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color: #FDF0D5; /* Light cream for logo text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #FDF0D5;
+  /*Lightcreamforlogotext*/text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-left: 10px;
   font-size: 2rem;
-  transition: transform 0.3s ease; /* Zoom effect */
+  transition: transform 0.3s ease;
+   /* Zoom effect */
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
 }
 
 .logoText:hover {
@@ -55,7 +65,7 @@
   background-image: linear-gradient(90deg, #C1121F, #669BBC); /* Gradient background */
   background-size: 100% 200%;
   background-position: 0% 0%;
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .navLink:after {
@@ -102,14 +112,19 @@
 /* Register Button */
 .registerButton {
   padding: 12px 24px;
-  background-color: #C1121F; /* Dark red for Register button */
-  color: #FDF0D5;
+  background-color: #C1121F;
+  /*DarkredforRegisterbutton*/color: #FDF0D5;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  border-radius: 20px; /* Rounded corners */
-  text-align: center;
+  border-radius: 20px;
+  /*Roundedcorners*/text-align: center;
   transition: background-color 0.3s ease;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-left:0.7rem;
 }
 
 .registerButton:hover {
