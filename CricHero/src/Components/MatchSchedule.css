@@ -1,0 +1,76 @@
+/* Tournament Schedule Section */
+.tournament-schedule {
+    background-color: #FDF0D5;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tournament-schedule h2 {
+    font-size: 24px;
+    color: #003049;
+    margin-bottom: 20px;
+  }
+  
+  /* Tournament Cards */
+  .tournament-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .tournament-card {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tournament-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Tournament Information */
+  .tournament-card h3 {
+    font-size: 20px;
+    color: #780000;
+    margin-bottom: 10px;
+  }
+  
+  .tournament-card p {
+    font-size: 16px;
+    color: #003049;
+    margin: 5px 0;
+  }
+  
+  /* Details Button */
+  .details-button {
+    background-color: #669BBC;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .details-button:hover {
+    background-color: #003049;
+  }
+  
+  @media (max-width: 768px) {
+    .tournament-cards {
+      flex-direction: column;
+    }
+  
+    .tournament-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
