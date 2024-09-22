@@ -44,6 +44,7 @@ h1 {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  background-color: #dcd9d9;
 }
 
 .match-type .option-button.active {
@@ -61,7 +62,10 @@ h1 {
   border-radius: 5px 0 0 5px;
   border: 1px solid #ddd;
 }
-
+.team-label {
+  display: flex;
+  gap: 3rem;
+}
 .search-button {
   padding: 8px 16px;
   background-color: #007bff;
@@ -88,8 +92,8 @@ h1 {
 }
 
 .team-flag {
-  width: 50px;
-  margin: 0 10px;
+  width: 2rem;
+  height: 1.4;
 }
 
 .score-section {
@@ -100,7 +104,7 @@ h1 {
 
 .team-score {
   padding: 15px;
-  background-color: #fff;
+  background-color: #dcd9d9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
