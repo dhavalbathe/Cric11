@@ -20,12 +20,14 @@
 }
 
 .matches {
+  padding-top: 1rem;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .right-section{
-  width: 25rem;
+  width: 20rem;
   height: 35rem;
   background-color: rgba(90, 91, 37, 50%);
   border-radius: 10px;
