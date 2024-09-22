@@ -100,6 +100,7 @@
 }
 
 .cricket-image {
+  margin-left: 7rem;
   animation: cricketer-moving 3s linear infinite;
   -webkit-animation: cricketer-moving 3s linear infinite;
 }
