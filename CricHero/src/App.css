@@ -11,10 +11,20 @@
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
+  padding: 2rem 6rem;
+  display: flex;
+  
 
 }
 
 .matches {
   display: flex;
   gap: 2rem;
+}
+
+.right-section{
+  width: 200px;
+  height: 500px;
+  background-color: rgba(90, 91, 37, 50%);
+  align-items: center;
 }
