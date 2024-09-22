@@ -16,6 +16,7 @@
   gap: 5rem;
   
 
+
 }
 
 .matches {
@@ -24,9 +25,109 @@
 }
 
 .right-section{
-  width: 200px;
-  height: 500px;
+  width: 25rem;
+  height: 35rem;
   background-color: rgba(90, 91, 37, 50%);
+  border-radius: 10px;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+.search-container {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.search-input {
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+  width: 250px;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.search-type{
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.search-button:hover {
+  background-color: #45a049;
+}
+/* .matchtype{
+  font-size: 44px;
+
+} */
+ span p {
+  font-weight: 300;
+  font-size: 22px;
+ }
+.match-type {
+  display: flex;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option-button {
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  flex: 1; /* Each button takes equal space */
+  text-align: center;
+}
+
+.option-button:hover {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+.option-button.active {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+.ind-pak {
+  padding-top: 1rem;
+}
+.match-between {
+  font-size: 25px;
+  font-weight: 600;
+}
+.ind {
+  padding-top: 0.5rem;
+  display: flex;
+  gap: 5rem;
+  color: #fff;
+  font-weight: 500;
+}
+.pak {
+  display: flex;
+  gap: 5rem;
+  color: #fff;
+  font-weight: 500;
+}
+.ind1 {
+  font-size: 15px;
 }
 .left-section {
   display: flex;
