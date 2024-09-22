@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { ScrollingText } from "./Components/ScrollingText.jsx";
 import { Nav } from "./Components/Nav.jsx";
 import { Match } from "./Components/Match.jsx";
-import cricketer from "./assets/cricketer.png";
-import './App.css';
+import cricketer from "./assets/cricketer.png"; // Importing cricketer image
+import indiaFlag from "./assets/india.webp"; // Import the Indian flag image
+import pakFlag from "./assets/pakflag.webp"; // Import the Pakistani flag image
 import './App.css';
 import SocialMediaSection from './Components/SocialMediaSection.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -11,8 +12,6 @@ import MatchSchedule from './Components/MatchSchedule';
 import Footer from './Components/Footer.jsx';
 
 function App() {
-
-
   const Text = () => {
     return (
       <div className="left-top-container">
@@ -25,9 +24,8 @@ function App() {
           <img className="Cricketer-image" src={cricketer} alt="Cricketer" />
         </div>
       </div>
-    )
-  }
-
+    );
+  };
 
   return (
     <>
@@ -42,58 +40,81 @@ function App() {
           </div>
         </div>
 
-
         <div className="right-section">
           <h1>Digital Score Card</h1>
 
-        
-          <span className="search-type">
-            <p className="matchtype">Match type</p>
+          {/* Match Type Selection */}
+          <div className="search-type">
+            <p className="matchtype">Match Type</p>
             <div className="match-type">
               <button className="option-button active">T-20</button>
               <button className="option-button">ODI</button>
               <button className="option-button">T-10</button>
             </div>
-          </span>
+          </div>
 
-          <span>
-            <p>Search Your match</p>
+          {/* Search Section */}
+          <div className="search-section">
+            <p>Search Your Match</p>
             <div className="search-container">
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search by team, player, or venue..."
                 className="search-input"
               />
               <button className="search-button">Search</button>
             </div>
-          </span>
-
-          <div className="match-between">
-            <p>IND</p>
-            <p>VS</p>
-           <p>PAK</p>
           </div>
 
-          <div className="ind-pak">
-            <div className="ind">
-              <p className="ind1">IND</p>
-              <p className="ind-score">257/7</p>
-              <p className="ind-over">19 over</p>
+          {/* Match Details Section */}
+          <div className="match-details">
+            <div className="team">
+              <p className="team-name">IND</p>
+              {/* <img className="team-flag" src={indiaFlag} alt="Indian flag" /> */}
+              <p className="vs">VS</p>
+              <p className="team-name">PAK</p>
+              {/* <img className="team-flag" src={pakflag} alt="Pakistani flag" /> */}
             </div>
-            <div className="pak">
-              <p className="pak1">PAK</p>
-              <p className="pak-score">261/9</p>
-              <p className="pak-over">20 over</p>
+
+            {/* Score and Overs Details */}
+            <div className="score-section">
+              <div className="team-score ind">
+                <p className="team-label">IND</p>
+                <p className="score">257/7</p>
+                <p className="overs">19 overs</p>
+                <p className="current-batting">
+                  <strong>Current Batsmen:</strong> Rohit Sharma (65 off 34)
+                </p>
+              </div>
+              <div className="team-score pak">
+                <p className="team-label">PAK</p>
+                <p className="score">261/9</p>
+                <p className="overs">20 overs</p>
+                <p className="current-bowling">
+                  <strong>Current Bowler:</strong> Shaheen Afridi (4-0-35-2)
+                </p>
+              </div>
+            </div>
+
+            {/* Match Status */}
+            <div className="match-status">
+              <p>
+                <strong>IND Needs:</strong> 5 runs in 6 balls to win.
+              </p>
+              <p>
+                <strong>Current Run Rate:</strong> 13.5
+              </p>
+              <p>
+                <strong>Required Run Rate:</strong> 5.0
+              </p>
             </div>
           </div>
-          
-
         </div>
+
       </div>
 
       <MatchSchedule />
       <SocialMediaSection />
-
       <Footer />
     </>
   );
