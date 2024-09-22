@@ -23,6 +23,7 @@
     -moz-transform: scale(1.08);
     -ms-transform: scale(1.08);
     -o-transform: scale(1.08);
+    cursor: pointer;
 }
 .match-logo {
     width: 150px;
