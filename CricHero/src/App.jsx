@@ -3,6 +3,9 @@ import { ScrollingText } from "./Components/ScrollingText.jsx";
 import { Nav } from "./Components/Nav.jsx";
 import { Match } from "./Components/Match.jsx";
 import './App.css'
+import SocialMediaSection from './Components/SocialMediaSection.jsx';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   
@@ -41,6 +44,8 @@ function App() {
               </div>
               </div>
         </div>
+
+         <SocialMediaSection/>
     </>
   )
 }
