@@ -5,7 +5,6 @@ import { Match } from "./Components/Match.jsx";
 import cricketer from "./assets/cricketer.png"; // Importing cricketer image
 import indiaFlag from "./assets/indiaflag.webp"; // Import the Indian flag image
 import pakFlag from "./assets/pakflag.webp"; // Import the Pakistani flag image
-import logo1 from "./assets/logo.png"; 
 import './App.css';
 import SocialMediaSection from './Components/SocialMediaSection.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
