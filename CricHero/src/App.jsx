@@ -5,6 +5,7 @@ import { Match } from "./Components/Match.jsx";
 import './App.css'
 import SocialMediaSection from './Components/SocialMediaSection.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import MatchSchedule from './Components/MatchSchedule';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
               </div>
               </div>
           </div>
-
+         <MatchSchedule />
          <SocialMediaSection/>
     </>
   )
