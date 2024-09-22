@@ -1,13 +1,13 @@
 /* Nav.module.css */
 .navbar {
-  background-color: #7695FF;
+  background-color: #007bff;
   /*Darkredbackground*/padding: 16px 24px;
   transition: background-color 0.3s ease;
-  /*Smoothbackgroundtransition*/-webkit-transition: background-color 0.3s ease;
+   /* Smooth background transition */
+  -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   -ms-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
-  -webkit-transition: background-color 0.3s ease;
 }
 
 .navContainer {
@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
 }
+/* logo */
 
 .logoContainer {
   display: flex;
