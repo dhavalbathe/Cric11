@@ -79,16 +79,16 @@ function App() {
           <div className="match-details">
             <div className="team">
               <p className="team-name">IND</p>
-              {/* <img className="team-flag" src={indiaFlag} alt="Indian flag" /> */}
+              {<img className="team-flag" src={indiaFlag} alt="indflag" />}
               <p className="vs">VS</p>
               <p className="team-name">PAK</p>
-              {/* <img className="team-flag" src={pakflag} alt="Pakistani flag" /> */}
+              {<img className="team-flag" src={pakFlag} alt="pakflag" />}
             </div>
 
             {/* Score and Overs Details */}
             <div className="score-section">
               <div className="team-score ind">
-                <p className="team-label">IND  <img className="team-flag" src={indiaFlag} alt="pakflag" /></p>
+                <p className="team-label">IND  <img className="team-flag" src={indiaFlag} alt="indflag" /></p>
                 <p className="score">257/2</p>
                 <p className="overs">19 overs</p>
                 <p className="current-batting">
@@ -107,7 +107,8 @@ function App() {
             </div>
 
             {/* Match Status */}
-            <div className="match-status">
+            <div className="match-status1">
+              <span className="match-status">
               <p>
                 <strong>IND Needs:</strong> 5 runs in 6 balls to win.
               </p>
@@ -117,7 +118,12 @@ function App() {
               <p>
                 <strong>Required Run Rate:</strong> 5.0
               </p>
+              </span>
+              <span className="view-more">
+              <p>View More</p>
+            </span>
             </div>
+           
           </div>
         </div>
 
