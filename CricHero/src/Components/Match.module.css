@@ -1,76 +1,133 @@
 .match-container {
-    width: 400px;
-    height: 170px;
-    background-color: #7cb9e899;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(145deg, #62cff4, #2c67f2); /* New background: Blue gradient */
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    max-width: 1200px;
+    height: 180px; /* Adjusted height */
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden; /* Ensure text stays within bounds */
+    gap: 20px;
+}
+
+.match-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.match-logo img {
+    height: 9rem;
+    width: auto;
+    /* margin-right: 25px; */
+}
+
+.match-details {
+    text-align: left;
+    width: 100%;
+    color: #f0f0f0; /* New text color: light grey for contrast */
+}
+
+.statusContainer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 10px;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    box-shadow: 10px 10px 20px #7CB9E8;
-}
-.match-container:hover {
-    transform: scale(1.08);
-    -webkit-transform: scale(1.08);
-    -moz-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    -o-transform: scale(1.08);
-    cursor: pointer;
-}
-.match-logo {
-    width: 150px;
-    aspect-ratio: 1;
-
-}
-
-.logo {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-
-.text {
-    font-size: 1rem;
-    color: black;
-    font-weight: 400;
+    gap: 10px;
 }
 
 .heading1 {
-    width: 7rem;
-    height: 1.6rem;
-    background-color: rgb(247, 98, 98);
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
-    padding-left: 0.5rem;
-    color:white;
-    place-content: center;
-    margin-bottom: 0.5rem;
+    font-size: 18px;
+    background-color: #ff5722;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.live {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Updated live status color */
+}
+
+.completed {
+    background: linear-gradient(45deg, #00c6ff, #0072ff); /* Updated completed status color */
+}
+
+.liveIcon {
+    color: #ffab47;
+    font-size: 20px;
+    animation: pulse 1s infinite;
 }
 
 .heading2 {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 20px;
+    color: #e0e0e0; /* Updated subheading color */
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.match-information {
+.details {
+    line-height: 1.7;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-right: 60px;
+}
+
+.para {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    color: #d0d0d0; /* Updated text color for details */
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffcc00; /* New vibrant color for the result */
+}
+
+.inProgress {
+    background-color: #ffcc00;
+    color: #1e3c72; /* Updated color */
+    padding: 6px 12px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.icon {
+    color: #ffab47;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .match-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .heading2 {
+        font-size: 18px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 16px;
+    }
 }

@@ -1,0 +1,80 @@
+.left-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f4f8fb; /* Light background for contrast */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1e3c72; /* Dark Blue heading for boldness */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.para1 {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4a4a4a; /* Subtle grey for easy reading */
+    margin-bottom: 15px;
+}
+
+.para2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff5722; /* Vibrant color for call-to-action */
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.cricket-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cricketer-image {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Soft shadow for a 3D effect */
+}
+
+@media (max-width: 768px) {
+    .left-top-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-container {
+        padding-right: 0;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .para1, .para2 {
+        font-size: 16px;
+    }
+
+    .Cricketer-image {
+        width: 250px;
+    }
+}
