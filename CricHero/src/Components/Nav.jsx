@@ -3,7 +3,7 @@ import styles from './Nav.module.css';
 import logo from "../assets/website-logo.png";
 
 
-export const Nav = () => {
+export const Nav = ({ ScrollToForm }) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
@@ -19,7 +19,7 @@ export const Nav = () => {
           <li><a href="#" className={styles.navLink}>About Us</a></li>
           <li><a href="#" className={styles.navLink}>Contact</a></li>
         </ul>
-        <a href="#" className={styles.registerButton}>Register</a>
+        <button onClick={ScrollToForm} className={styles.registerButton}>Register</button>
         <div className={styles.mobileMenu}>
           <button className={styles.menuButton}>
             <svg xmlns="http://www.w3.org/2000/svg" className={styles.menuIcon} fill="none" viewBox="0 0 24 24" stroke="currentColor">

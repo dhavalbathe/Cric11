@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { ScrollingText } from "./Components/ScrollingText.jsx";
 import { Nav } from "./Components/Nav.jsx";
 import { Match } from "./Components/Match.jsx";
@@ -10,8 +10,17 @@ import SocialMediaSection from './Components/SocialMediaSection.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import MatchSchedule from './Components/MatchSchedule';
 import Footer from './Components/Footer.jsx';
+import CricketRegistrationForm from './Components/RegistrationForm.jsx';
 
 function App() {
+  const registrationFormRef = useRef(null);
+
+  const ScrollToForm = () => {
+    if (!registrationFormRef.current) {
+      registrationFormRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const Text = () => {
     return (
       <div className="left-top-container">
@@ -30,7 +39,7 @@ function App() {
   return (
     <>
       <ScrollingText />
-      <Nav />
+      <Nav onClick={ScrollToForm} />
       <div className="hero-section">
         <div className="left-section">
           <Text />
@@ -115,6 +124,9 @@ function App() {
       </div>
 
       <MatchSchedule />
+      <div className='cricket-registration-form' ref={registrationFormRef}>
+        <CricketRegistrationForm />
+      </div>
       <SocialMediaSection />
       <Footer />
     </>

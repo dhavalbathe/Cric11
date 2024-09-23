@@ -130,15 +130,16 @@
   border-radius: 20px;
   /*Roundedcorners*/text-align: center;
   transition: background-color 0.3s ease;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
   margin-left:0.7rem;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
 }
 
 .registerButton:hover {
   background-color: #8d6565; /* Darker red for hover */
+  cursor: pointer;
 }
 
 /* Mobile menu button (hidden on desktop) */

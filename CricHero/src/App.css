@@ -107,6 +107,7 @@ h1 {
   background-color: #dcd9d9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .current-batting, .current-bowling {
@@ -122,6 +123,7 @@ h1 {
   background-color: #ffefc5;
   padding: 10px;
   border-radius: 10px;
+
 }
 .left-section {
   display: flex;
@@ -138,20 +140,17 @@ h1 {
   width: 30rem;
   height: 15rem;
   border-radius: 3rem;
-  /* background-color: #d8d2c275; */
-  color:black;
+  /*background-color: #d8d2c275;
+  */color:black;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
   gap:0.5rem;
   padding: 0 3rem;
-  /* animation: moving 1.5s linear infinite;
-  -webkit-animation: moving 1.5s linear infinite; */
-  -webkit-border-radius: 3rem;
-  -moz-border-radius: 3rem;
-  -ms-border-radius: 3rem;
-  -o-border-radius: 3rem;
+  /*animation: moving 1.5s linear infinite;
+  -webkit-animation: moving 1.5s linear infinite;
+  */-webkit-border-radius: 3rem;
 }
 
 @keyframes moving {
@@ -222,4 +221,8 @@ h1 {
   -ms-transform: scale(1);
   -o-transform: scale(1);
 }
+}
+
+.cricket-registration-form {
+  padding: 3rem 0;
 }

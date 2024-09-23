@@ -1,0 +1,112 @@
+/* Container for the form and image */
+.formImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+  }
+  
+  /* Image Styling */
+  .imageContainer {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .cricketImage {
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styling */
+  .registrationForm {
+    flex: 1;
+    background-color: #f0f8ff; /* Light sky blue */
+    border: 2px solid #006400; /* Dark green for a cricket field vibe */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Title */
+  .registrationForm h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #006400; /* Dark green */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Add a cricket bat icon next to the title */
+  .registrationForm h2::before {
+    content: "🏏";
+    position: absolute;
+    left: 60px;
+    font-size: 28px;
+    top: -6px;
+  }
+  
+  /* Form Group */
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  /* Label Styling */
+  .formGroup label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Input Fields */
+  .formGroup input,
+  .formGroup select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #006400; /* Dark green border */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .formGroup input:focus,
+  .formGroup select:focus {
+    outline: none;
+    border-color: #32cd32; /* Lime green on focus */
+    box-shadow: 0 0 5px rgba(50, 205, 50, 0.7); /* Soft lime glow */
+  }
+  
+  /* Error Input Styling */
+  .errorInput {
+    border-color: red;
+  }
+  
+  .errorText {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Submit Button */
+  .submitButton {
+    background-color: #32cd32; /* Lime green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+   
+  }  
