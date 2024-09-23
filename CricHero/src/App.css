@@ -11,13 +11,13 @@
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
-  padding: 3rem 6rem;
+  padding: 2.5rem 6rem;
   display: flex;
-  gap: 5rem;
+  gap: 2rem;
   
 }
 .right-section {
-  padding: 20px;
+  padding: 1rem;
   background-color: #f4f4f4;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ h1 {
 }
 .matches {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .match-type button {
