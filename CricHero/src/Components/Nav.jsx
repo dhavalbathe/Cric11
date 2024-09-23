@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Nav.module.css';
-import logo from "../assets/website-logo.png";
+import logo from "../assets/logo.png";
 
 
 export const Nav = ({ ScrollToForm }) => {
